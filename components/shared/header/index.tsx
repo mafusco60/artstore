@@ -5,7 +5,7 @@ import Menu from "./menu";
 
 const Header = () => {
   return (
-    <header className="w-full border-b bg-indigo-950 text-white">
+    <header className="w-full border-b bg-cyan-800 text-white">
       <div className="wrapper flex-between">
         <div className="flex-start">
           <Link

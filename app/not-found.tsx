@@ -7,7 +7,7 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen ">
-      <header className="w-full border-b bg-indigo-800 text-white items-center justify-center">
+      <header className="w-full border-b bg-cyan-800 text-white items-center justify-center">
         <div className="wrapper flex-between">
           <div className="flex-start">
             <Link href="/" className="flex-start ">
