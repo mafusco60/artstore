@@ -1,41 +1,31 @@
-import { ShoppingCart, UserIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
-import ModeToggle from "./mode-toggle";
+import Menu from "./menu";
 
 const Header = () => {
   return (
-    <header className="w-full border-b bg-indigo-800 text-white">
+    <header className="w-full border-b bg-indigo-950 text-white">
       <div className="wrapper flex-between">
         <div className="flex-start">
-          <Link href="/" className="flex-start">
+          <Link
+            rel="preload"
+            as="image"
+            type="image/svg+xml"
+            href="/"
+            className="flex-start"
+          >
             <Image
               src="/images/logo.svg"
               alt={`${APP_NAME} logo`}
-              height={100}
-              width={200}
+              height={408}
+              width={794}
               priority={true}
+              className="h-[100px] w-auto max-w-[200px]"
             />
-            <span className="hidden lg:block font-bold text-2xl ml-3">
-              {APP_NAME}
-            </span>
           </Link>
         </div>
-        <div className="space-x-2">
-          <ModeToggle />
-          <Button asChild variant="ghost">
-            <Link href="/cart">
-              <ShoppingCart /> Cart
-            </Link>
-          </Button>
-          <Button asChild>
-            <Link href="/sign-in">
-              <UserIcon /> Sign In
-            </Link>
-          </Button>
-        </div>
+        <Menu />
       </div>
     </header>
   );

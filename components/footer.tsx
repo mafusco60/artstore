@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className="border-t border-indigo-800">
       <div className="p-5 flex-center">
-        <p>&copy;</p> 2021-{currentYear} {APP_NAME}. All Rights Reserved
+        <p>&copy;</p> 2021-{currentYear} {APP_NAME}.{" "}
+        <span className="pl-3"></span> All Rights Reserved
       </div>
     </footer>
   );
